@@ -7,7 +7,7 @@ const todoRoutes = require('./routes/todoRoutes');
 const app = express();
 
 app.use(cors({
-  origin: "https://todo-frontend-c7uz.onrender.com",
+  origin: "https://mychecklist.onrender.com",
 }));
 
 app.use(express.json());
