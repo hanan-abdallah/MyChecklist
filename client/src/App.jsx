@@ -122,7 +122,7 @@ function App() {
     <div className="app-container">
       <div className="todo-wrapper">
         <header className="header">
-          <h1> My Tasks</h1>
+          <h1> Task Checklist</h1>
           <div className="status">
             <StatusDot online={apiOnline} />
             <span>{apiOnline ? "Connected" : "Offline"}</span>
