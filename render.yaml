@@ -1,7 +1,7 @@
 # Exported from Render on 2025-08-14T09:42:08Z
 services:
 - type: web
-  name: todo-frontend
+  name: MyChecklist
   runtime: static
   repo: https://github.com/hanan-abdallah/MyChecklist
   envVars:
@@ -12,7 +12,7 @@ services:
   autoDeployTrigger: commit
   rootDir: client
 - type: web
-  name: todo-backend
+  name: Checklist server
   runtime: node
   repo: https://github.com/hanan-abdallah/MyChecklist
   plan: free
@@ -21,7 +21,7 @@ services:
     sync: false
   - key: PORT
     sync: false
-  region: oregon
+  region: frankfurt
   buildCommand: npm install
   startCommand: npm start
   autoDeployTrigger: commit
